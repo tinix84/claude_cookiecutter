@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash({{cookiecutter.package_manager}} run *)",
+      "Bash(git *)",
+      "Bash(make *)",
+      "Read(**)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(rm -rf /)",
+      "Bash(rm -rf *)",
+      "Bash(rm -rf ~)",
+      "Bash(rm -rf .)"
+    ]
+  }
+}
